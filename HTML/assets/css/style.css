@@ -1,0 +1,20 @@
+
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  z-index: 1;
+}
+
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  float: left;
+
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+  transition-property: opacity;
+}
