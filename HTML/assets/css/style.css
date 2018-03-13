@@ -1,9 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
-
-.image {
+#container {
+  background-color: #00B0A1;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+}
+
+div.image {
+  width: 100vw;
+  /*height: 100vh;*/
+  background-color: #00B0A1;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  width: 100%;
   z-index: 1;
 }
 
@@ -11,10 +27,12 @@
   width: 100vw;
   height: 100vh;
   background-color: white;
-  z-index: 2;
-  float: left;
+  z-index: 100;
 
   transition-duration: 2s;
   transition-delay: 0.5s;
   transition-property: opacity;
+
+  position: absolute;
+  top: 0;
 }
