@@ -132,12 +132,6 @@ h2.page-subtitle {
 #title-cuba-img {
   z-index: 1;
 }
-/* .image-hover:hover {
-  opacity: 0.3;
-  -webkit-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
-} */
 
 #title-canada-img {
   position: absolute;
@@ -152,6 +146,39 @@ h2.page-subtitle {
   transform: translateY(-50%);
 }
 
-.image-hover {
+#bio-section.container-fluid {
+  padding: 19%;
+}
+h3 {
+  font-size: 100px;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.bio-title {
+  position: relative;
+  top: -50%;
+  left: 22%;
+}
+#russia-section, #canada-section, #cuba-section {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 90px;
+}
+#russia-section h3, #canada-section h3, #cuba-section h3 {
+  position: relative;
+  left: 26%;
+}
+#russia-section .col-12, #canada-section .col-12, #cuba-section .col-12 {
+  overflow: hidden;
+}
+
+
+/* fixes */
+a, a:hover, a:visited, a:active {
+  color: black;
 
 }

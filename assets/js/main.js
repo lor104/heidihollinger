@@ -13,5 +13,13 @@ $( document).ready(function() {
     }, 300);
   })
 
+  $('a.image-link').on("click", function (e) {
+    e.preventDefault();
+    var offset = 50;
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    }, 1000);
+  })
 
 })
