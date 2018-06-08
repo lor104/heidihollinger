@@ -15,7 +15,7 @@
     font-style: normal;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -84,9 +84,11 @@ div.backgroundImage > img {
 
 .main-font {
   font-family: "bebasregular", serif;
+  color: black;
 }
 .sub-font {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
 }
 
 h1.page-title {
@@ -103,14 +105,14 @@ h2.page-subtitle {
 .page-title-container-inner {
   position: absolute;
   top: 50%;
-  transform: translate(-25%, -50%);
+  transform: translate(-24%, -50%);
 }
 
 .page-title-container {
   width: 478px;
   height: 427px;
   position: absolute;
-  top: 61%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 4px solid black;
@@ -129,17 +131,17 @@ h2.page-subtitle {
   transform: translateY(-50%) scale(0.9);
   transform-origin: left;
 }
-#title-cuba-img {
+#title-cuba-img, #title-russia-img, #title-canada-img {
   z-index: 1;
 }
 
-#title-canada-img {
+#title-canada-img, #title-canada-img-color {
   position: absolute;
   bottom: 0;
   left: 50%;
 }
 
-#title-russia-img {
+#title-russia-img, #title-russia-img-color {
   position: absolute;
   right: 0;
   top: 33%;
@@ -164,9 +166,9 @@ h3 {
   left: 22%;
 }
 #russia-section, #canada-section, #cuba-section {
-  width: 100vw;
+  width: 94%;
   height: 100vh;
-  margin-top: 90px;
+  margin: 90px 3% 0;
 }
 #russia-section h3, #canada-section h3, #cuba-section h3 {
   position: relative;
@@ -175,10 +177,25 @@ h3 {
 #russia-section .col-12, #canada-section .col-12, #cuba-section .col-12 {
   overflow: hidden;
 }
+.col-4 {
+  padding: 0 20px !important;
+}
+.col-4 img {
+  width: 100%;
+}
+.media-link img {
+  width: 40px;
+  margin-right: 20px;
+}
+#cuba-section {
+  margin-bottom: 100px;
+}
+
+
 
 
 /* fixes */
 a, a:hover, a:visited, a:active {
   color: black;
-
+  text-decoration: none;
 }

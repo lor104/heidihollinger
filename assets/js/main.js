@@ -22,4 +22,16 @@ $( document).ready(function() {
     }, 1000);
   })
 
+  // $('.page-title-container').on("mouseover", function(e) {
+  //   console.log("in")
+  //   $('.page-title-container').animate({
+  //     backgroundColor: 'red',
+  //   }, 300);
+  // });
+  // $('.page-title-container').on("mouseleave", function(e) {
+  //   console.log("out")
+  //   $('.page-title-container').animate({
+  //     backgroundColor: 'none',
+  //   }, 300);
+  // })
 })
