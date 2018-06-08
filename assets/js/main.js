@@ -1,13 +1,16 @@
-$( document ).ready(function() {
+$( document).ready(function() {
 
-  window.addEventListener("load", function() {
-    console.log("loaded")
-    var loader = document.getElementById("loader");
-
-
-    loader.style.opacity = 0;
-
-    setTimeout(function() {loader.style.display = "none";}, 3000)
+  $('.image-hover').on("mouseover", function(e) {
+    var id = "#" + this.id
+    $(id).animate({
+      opacity: 0.3,
+    }, 300);
+  });
+  $('.image-hover').on("mouseleave", function(e) {
+    var id = "#" + this.id
+    $(id).animate({
+      opacity: 1,
+    }, 300);
   })
 
 
